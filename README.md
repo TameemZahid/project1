@@ -19,22 +19,19 @@ Join us for this **transformative learning journey** and take a step forward in 
 **Join the community:**
 
 
-https://discord.com/channels/1250122090246312020/1250122090699554827
+Discord: https://discord.com/channels/1250122090246312020/1250122090699554827
 
 
-https://www.facebook.com/groups/learndevopswithbz
+Facebook: https://www.facebook.com/groups/learndevopswithbz
 
 
-https://www.linkedin.com/groups/14119593/
+Linkedin: https://www.linkedin.com/groups/14119593/
 
 
-https://chat.whatsapp.com/CywSgRC4GLWG8VZz96ej8E
+Whatsapp: https://chat.whatsapp.com/CywSgRC4GLWG8VZz96ej8E
 
 
-https://github.com/DevOps-With-Babar-Zahoor
-
-
-https://www.youtube.com/@babarzahoor
+Github: https://github.com/DevOps-With-Babar-Zahoor
 
 
 **Previous Bootcamps:** 
