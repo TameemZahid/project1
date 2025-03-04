@@ -4,12 +4,15 @@
 # GitLab Self-Hosted Installation  
 
 **Step 1: Download Page**
+
 Go to the download page of “Install self-managed GitLab” by visiting https://about.gitlab.com/install/ 
 
 **Step 2: Get installation instructions for Ubuntu**  
+
 Click on the Ubuntu card to get the instructions.  
 
 **Step 3: Install and configure the necessary dependencies** 
+
 Install and configure the required dependencies 
 
  sudo apt-get update 
@@ -19,11 +22,13 @@ Install and configure the required dependencies
 Next, install Postfix (or Sendmail) to send notification emails. 
 
 **Step 4: Add the GitLab package repository and install the package** 
+
 Add the GitLab package repository and install the package 
 
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash 
 
 **Step 5: Provide DNS URL for GitLab**
+
 sudo EXTERNAL_URL="https://git.osfp.org.pk" apt-get install gitlab-ee 
 
 In case we encounter the following error, then make sure the DNS entry is properly linked with IP address.  
@@ -39,7 +44,9 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
  
 
 **There could be another error.**  
+
 sudo EXTERNAL_URL="https://git.osfp.org.pk" apt-get install gitlab-ee 
+
 Reading package lists... Done 
 Building dependency tree... Done 
 Reading state information... Done 
