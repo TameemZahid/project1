@@ -19,7 +19,7 @@ Join us for this **transformative learning journey** and take a step forward in 
 **Join the community:**
 
 
-Discord: https://discord.com/channels/1250122090246312020/1250122090699554827
+Discord: [https://discord.com/channels/1250122090246312020/1250122090699554827](https://discord.gg/KJcKTTJp)
 
 
 Facebook: https://www.facebook.com/groups/learndevopswithbz
