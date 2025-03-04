@@ -67,7 +67,9 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 **Then following commands will help to resolve.**
 
 sudo gitlab-ctl reconfigure 
+
 sudo apt-get -f install   
+
 sudo gitlab-ctl status 
 
 
@@ -75,7 +77,9 @@ sudo gitlab-ctl status
 GitLab can auto-generate certificates. Ensure letsencrypt['enable'] is set to true in /etc/gitlab/gitlab.rb: 
 
 letsencrypt['enable'] = true 
+
 letsencrypt['contact_emails'] = ['babar@osfp.org.pk']   
+
 external_url "https://git.osfp.org.pk" 
 
 sudo gitlab-ctl reconfigure 
