@@ -13,7 +13,10 @@ By the end of this boot camp, you’ll gain real-world skills in **automation, c
 Join us for this **transformative learning journey** and take a step forward in mastering DevOps! 🚀  
 
 
-Join the community:
+**Subscribe for Live Bootcamp: https://www.youtube.com/@babarzahoor**
+
+
+**Join the community:**
 
 
 https://discord.com/channels/1250122090246312020/1250122090699554827
