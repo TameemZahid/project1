@@ -1,24 +1,25 @@
 # RamadanBootCamp2025
 
 
-# GitLab Self Hosted Installation  
+# GitLab Self-Hosted Installation  
 
 **Step 1: Download Page**
-Go to download page of “Install self-managed GitLab” by visiting https://about.gitlab.com/install/ 
+Go to the download page of “Install self-managed GitLab” by visiting https://about.gitlab.com/install/ 
 
 **Step 2: Get installation instructions for Ubuntu**  
 Click on the Ubuntu card to get the instructions.  
 
 **Step 3: Install and configure the necessary dependencies** 
-Install and configure the necessary dependencies 
+Install and configure the required dependencies 
 
-sudo apt-get update 
-sudo apt-get install -y curl openssh-server ca-certificates tzdata perl 
+ sudo apt-get update 
+ sudo apt-get install -y curl openssh-server ca-certificates tzdata perl 
 
 Next, install Postfix (or Sendmail) to send notification emails. 
 
 **Step 4: Add the GitLab package repository and install the package** 
 Add the GitLab package repository and install the package 
+
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash 
 
 **Step 5: Provide DNS URL for GitLab**
@@ -59,14 +60,18 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 
 **Then following commands will help to resolve.** 
   sudo gitlab-ctl reconfigure 
+  
   sudo apt-get -f install 
+  
   sudo gitlab-ctl status 
 
 **In case of Invalid SSL certificate  following steps can help:**
  GitLab can auto-generate certificates. Ensure letsencrypt['enable'] is set to true in /etc/gitlab/gitlab.rb: 
 
   letsencrypt['enable'] = true 
+  
   letsencrypt['contact_emails'] = ['your-email@example.com'] 
+  
   external_url "https://git.osfp.org.pk" 
 
 sudo gitlab-ctl reconfigure 
