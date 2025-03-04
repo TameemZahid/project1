@@ -1,5 +1,4 @@
-# RamadanBootCamp2025
-
+# OSFP DevOps RamadanBootCamp2025
 
 # GitLab Self-Hosted Installation  
 
@@ -15,11 +14,12 @@ Click on the Ubuntu card to get the instructions.
 
 Install and configure the required dependencies 
 
- sudo apt-get update 
- 
- sudo apt-get install -y curl openssh-server ca-certificates tzdata perl 
+sudo apt-get update 
+sudo apt-get install -y curl openssh-server ca-certificates tzdata perl 
 
 Next, install Postfix (or Sendmail) to send notification emails. 
+
+sudo apt install postfix
 
 **Step 4: Add the GitLab package repository and install the package** 
 
@@ -62,24 +62,20 @@ dpkg: error processing package gitlab-ee (--configure):
 Errors were encountered while processing: 
  gitlab-ee 
 needrestart is being skipped since dpkg has failed 
-E: Sub-process /usr/bin/dpkg returned an error code (1) 
+E: Sub-process /usr/bin/dpkg returned an error code (1)  
 
- 
+**Then following commands will help to resolve.**
 
-**Then following commands will help to resolve.** 
-  sudo gitlab-ctl reconfigure 
-  
-  sudo apt-get -f install 
-  
-  sudo gitlab-ctl status 
+sudo gitlab-ctl reconfigure 
+sudo apt-get -f install   
+sudo gitlab-ctl status 
+
 
 **In case of Invalid SSL certificate  following steps can help:**
- GitLab can auto-generate certificates. Ensure letsencrypt['enable'] is set to true in /etc/gitlab/gitlab.rb: 
+GitLab can auto-generate certificates. Ensure letsencrypt['enable'] is set to true in /etc/gitlab/gitlab.rb: 
 
-  letsencrypt['enable'] = true 
-  
-  letsencrypt['contact_emails'] = ['your-email@example.com'] 
-  
-  external_url "https://git.osfp.org.pk" 
+letsencrypt['enable'] = true 
+letsencrypt['contact_emails'] = ['babar@osfp.org.pk']   
+external_url "https://git.osfp.org.pk" 
 
 sudo gitlab-ctl reconfigure 
