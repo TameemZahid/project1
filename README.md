@@ -41,3 +41,6 @@ OpenShift Bootcamp Ramzan 2024 https://www.youtube.com/playlist?list=PLBiQy5tO4R
 
 
 Kubernetes Bootcamp Ramzan 2023: https://www.youtube.com/playlist?list=PLBiQy5tO4R2OA3_eQ4wPXchN0XtODcP8z
+
+Linux Docker Kubernetes BootCamp 2022 https://www.youtube.com/playlist?list=PLBiQy5tO4R2N-W-1lvnNMVAJXqqSxujXQ
+
