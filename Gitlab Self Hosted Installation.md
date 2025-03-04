@@ -15,6 +15,7 @@ Click on the Ubuntu card to get the instructions.
 Install and configure the required dependencies 
 
 sudo apt-get update 
+
 sudo apt-get install -y curl openssh-server ca-certificates tzdata perl 
 
 Next, install Postfix (or Sendmail) to send notification emails. 
