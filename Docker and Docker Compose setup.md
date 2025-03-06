@@ -4,22 +4,27 @@
 **Machine specs on which these commands are tested**
 
 Ram:  4GB
+
 CPU:  2
+
 Storage:  25GB
 
 
 **Update the machine**
+
 sudo apt update -y
 
 
 
 **Run the following command to uninstall all the conflicting packages**
+
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
 
 
 
 **Setup docker’s apt repository**
+
 // Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -29,6 +34,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 
 **Add the repository to Apt sources:**
+
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] \
   https://download.docker.com/linux/ubuntu $(./etc/os-release && echo \
@@ -41,6 +47,7 @@ sudo apt-get update
 
 
 **Install the docker packages**
+
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 
