@@ -1,7 +1,7 @@
 # Docker & Docker Compose Installation on Ubuntu 22.04
 
 
-** Machine specs on which these commands are tested **
+**Machine specs on which these commands are tested**
 
 Ram:  4GB
 
@@ -11,20 +11,20 @@ Storage:  25GB
 
 
 
-** Update the machine **
+**Update the machine**
 
 sudo apt update -y
 
 
 
-** Run the following command to uninstall all the conflicting packages **
+**Run the following command to uninstall all the conflicting packages**
 
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
 
 
 
-** Setup docker’s apt repository **
+**Setup docker’s apt repository**
 
 // Add Docker's official GPG key:
 
@@ -39,7 +39,7 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 
-** Add the repository to Apt sources: **
+**Add the repository to Apt sources:**
 
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
@@ -50,7 +50,7 @@ sudo apt-get update
 
 
 
-** Install the docker packages **
+**Install the docker packages**
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
@@ -59,13 +59,13 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 
 
-** Verify the installation is successful **
+**Verify the installation is successful**
 sudo docker run hello-world
 
 
 
 
-** To manage docker as a non root user **
+**To manage docker as a non root user**
 
 
 1. Craete docker group
