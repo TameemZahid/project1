@@ -24,9 +24,9 @@ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker c
 
 
 
-Setup docker’s apt repository
+** Setup docker’s apt repository **
 
-# Add Docker's official GPG key:
+// Add Docker's official GPG key:
 
 sudo apt-get update
 
