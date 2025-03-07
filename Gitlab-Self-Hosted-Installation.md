@@ -80,6 +80,9 @@ sudo gitlab-ctl status
 **In case of Invalid SSL certificate  following steps can help:**
 GitLab can auto-generate certificates. Ensure `letsencrypt['enable']` is set to true in `/etc/gitlab/gitlab.rb`: 
 
+> [!IMPORTANT]
+> Make sure the details are of your own, including the email and URL
+
 ```
 letsencrypt['enable'] = true 
 
