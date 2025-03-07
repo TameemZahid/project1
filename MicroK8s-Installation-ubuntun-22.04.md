@@ -78,7 +78,8 @@ Storage:  25GB
 
 `microk8s add-node` 
 
-// This will return some joining instructions which should be executed on the MicroK8s instance that you wish to join to the cluster 
+> [!IMPORTANT]
+> This will return some joining instructions which should be executed on the MicroK8s instance that you wish to join to the cluster 
 
  
 
