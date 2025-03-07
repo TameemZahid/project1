@@ -34,7 +34,9 @@ Storage:  25GB
 
 **Re-enter the session for the group update to take place** 
 
-`exit`             // logout and login again 
+`exit`
+> [!NOTE]
+> logout and login again 
 
  
 
