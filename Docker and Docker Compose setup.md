@@ -74,14 +74,17 @@ echo \
 **To manage docker as a non root user**
 
 1. Craete docker group
+
 `sudo groupadd docker`
 
-2. Add your user to the docker group
+3. Add your user to the docker group
+
 `sudo usermod -aG docker $USER`
 
-3. Run following command to activate changes to group
+4. Run following command to activate changes to group
+
 `newgrp docker`
 
-4. Now run docker command without sudo
-`docker run hello-world`
+5. Now run docker command without sudo
 
+`docker run hello-world`
