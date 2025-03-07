@@ -82,7 +82,8 @@ Storage:  25GB
 
 **Run this command on node you wish to join as a worker** 
 
-Note: Both machines should be on the same network 
+> [!Note]
+> Both machines should be on the same network 
 
 `sudo microk8s join <join command given by “microk8s add-node” command>`  
 
