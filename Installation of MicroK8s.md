@@ -1,4 +1,4 @@
-# Install microk8s on ubuntu 22.04 
+# Install microk8s on Ubuntu 22.04 
 
 **Machine specs** 
 
@@ -34,7 +34,7 @@ chmod 0700 ~/.kube
 
 **Re-enter the session for the group update to take place** 
 
-exit             #logout and login again 
+exit             // logout and login again 
 
  
 
