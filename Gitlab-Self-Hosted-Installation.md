@@ -34,7 +34,8 @@ Add the GitLab package repository and install the package
 
 In case we encounter the following error, then make sure the DNS entry is properly linked with IP address.  
 
-```[2025-03-04T10:23:02+00:00] FATAL: RuntimeError: letsencrypt_certificate[git.osfp.org.pk] (letsencrypt::http_authorization line 6) had an error: RuntimeError: acme_certificate[staging] (letsencrypt::http_authorization line 43) had an error: RuntimeError: ruby_block[create certificate for git.osfp.org.pk] (letsencrypt::http_authorization line 110) had an error: RuntimeError: [git.osfp.org.pk] Validation failed, unable to request certificate, Errors: [{url: https://acme-staging-v02.api.letsencrypt.org/acme/chall/187832474/16275866344/Is62zw, status: invalid, error: {"type"=>"urn:ietf:params:acme:error:dns", "detail"=>"no valid A records found for git.osfp.org.pk; no valid AAAA records found for git.osfp.org.pk", "status"=>400}} ] 
+```
+[2025-03-04T10:23:02+00:00] FATAL: RuntimeError: letsencrypt_certificate[git.osfp.org.pk] (letsencrypt::http_authorization line 6) had an error: RuntimeError: acme_certificate[staging] (letsencrypt::http_authorization line 43) had an error: RuntimeError: ruby_block[create certificate for git.osfp.org.pk] (letsencrypt::http_authorization line 110) had an error: RuntimeError: [git.osfp.org.pk] Validation failed, unable to request certificate, Errors: [{url: https://acme-staging-v02.api.letsencrypt.org/acme/chall/187832474/16275866344/Is62zw, status: invalid, error: {"type"=>"urn:ietf:params:acme:error:dns", "detail"=>"no valid A records found for git.osfp.org.pk; no valid AAAA records found for git.osfp.org.pk", "status"=>400}} ] 
 
 dpkg: error processing package gitlab-ee (--configure): 
  installed gitlab-ee package post-installation script subprocess returned error exit status 1 
