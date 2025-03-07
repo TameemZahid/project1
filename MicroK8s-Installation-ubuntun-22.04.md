@@ -12,47 +12,47 @@ Storage:  25GB
 
 **Update the machine** 
 
-sudo apt update -y 
+`sudo apt update -y` 
 
  
 
 **Install microk8s** 
 
-sudo snap install microk8s --classic --channel=1.32 
+`sudo snap install microk8s --classic --channel=1.32` 
 
  
 
 **Join user to the group** 
 
-sudo usermod -a -G microk8s $USER 
+`sudo usermod -a -G microk8s $USER` 
 
-mkdir -p ~/.kube 
+`mkdir -p ~/.kube` 
 
-chmod 0700 ~/.kube 
+`chmod 0700 ~/.kube` 
 
  
 
 **Re-enter the session for the group update to take place** 
 
-exit             // logout and login again 
+`exit`             // logout and login again 
 
  
 
 **Run this command and wait for few seconds to see status** 
 
-microk8s status --wait-ready 
+`microk8s status --wait-ready` 
 
  
 
 **Set alias** 
 
-alias kubectl='microk8s kubectl' 
+`alias kubectl='microk8s kubectl'` 
 
  
 
 **Access the kubernetes** 
 
-kubectl get nodes 
+`kubectl get nodes`
 
  
 
@@ -62,19 +62,19 @@ kubectl get nodes
 
 **Update the machine** 
 
-sudo apt update -y 
+`sudo apt update -y` 
 
  
 
 **Install microk8s on worker node** 
 
-sudo snap install microk8s --classic --channel=1.32 
+`sudo snap install microk8s --classic --channel=1.32` 
 
  
 
 **Run this command on master node** 
 
-microk8s add-node 
+`microk8s add-node` 
 
 // This will return some joining instructions which should be executed on the MicroK8s instance that you wish to join to the cluster 
 
@@ -84,20 +84,20 @@ microk8s add-node
 
 Note: Both machines should be on the same network 
 
-sudo microk8s join <join command given by “microk8s add-node” command>  
+`sudo microk8s join <join command given by “microk8s add-node” command>`  
 
  
 
 **Run this command on Master node to check if node is joined successfully**  
 
-microk8s kubectl get nodes 
+`microk8s kubectl get nodes` 
 
- 
+**Set Alias** 
 
-alias kubectl='microk8s kubectl' 
+`alias kubectl='microk8s kubectl'` 
 
  
 
 **To stop microk8s** 
 
-microk8s stop 
+`microk8s stop` 
