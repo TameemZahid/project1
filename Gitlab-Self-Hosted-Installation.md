@@ -4,7 +4,7 @@
 
 ### Step 1: Download Page
 
-Go to the download page of “Install self-managed GitLab” by visiting https://about.gitlab.com/install/ 
+Go to the download page of “[Install self-managed GitLab](https://about.gitlab.com/install/)”
 
 ### Step 2: Get installation instructions for Ubuntu
 
