@@ -12,7 +12,7 @@ Storage:  25GB
 
 **Update the machine**
 
-sudo apt update -y
+`sudo apt update -y`
 
 
 
