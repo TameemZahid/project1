@@ -2,7 +2,7 @@
 
 
 > [!NOTE]
-> This document is prepared with the help of official documentation that can be found [here](https://docs.gitlab.com/runner/install/kubernetes/) 
+> This document is prepared with the help of [official documentation](https://docs.gitlab.com/runner/install/kubernetes/) 
 
 
 **Installing Helm chart**
