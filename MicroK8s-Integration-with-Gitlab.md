@@ -220,10 +220,11 @@ deploy-job:
   script: 
 
     - sshpass -p "$MICROK8S_PASSWORD" scp -o StrictHostKeyChecking=no kubernetes/deployment.yaml ${MICROK8S_USERNAME}@${MICROK8S_IP_ADDRESS}:/${MICROK8S_USERNAME}/deployment.yaml
-```
+
 
     - sshpass -p "$MICROK8S_PASSWORD" ssh -o StrictHostKeyChecking=no ${MICROK8S_USERNAME}@${MICROK8S_IP_ADDRESS} "cd /${MICROK8S_USERNAME} && microk8s.kubectl apply -f deployment.yaml" 
 
   tags: 
 
   - microk8s 
+```
