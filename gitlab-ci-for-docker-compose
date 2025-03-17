@@ -1,0 +1,12 @@
+stages:
+  - deploy
+deploy-job:
+  stage: deploy
+  image: alpine:latest 
+  before_script:
+    - apk add --no-cache openssh sshpass
+  script:
+    - sshpass -p "$DOCKER_VM_PASSWORD" scp -o StrictHostKeyChecking=no docker-compose.yaml ${DOCKER_VM_USERNAME}@${DOCKER_VM_IP_ADDRESS}:/${DOCKER_VM_USERNAME}/docker-compose.yaml
+    - sshpass -p "$DOCKER_VM_PASSWORD" ssh -o StrictHostKeyChecking=no ${DOCKER_VM_USERNAME}@${DOCKER_VM_IP_ADDRESS} "cd /${DOCKER_VM_USERNAME} && docker compose -f docker-compose.yaml down && docker compose -f docker-compose.yaml up -d"
+  tags:
+  - microk8s
