@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: adijaiswal/bankapp:blue # Adjust the image tag for the blue version
+        image: git.osfp.org.pk:5050/osfpbootcamp2025/blue-green-deployment-v2:Blue
         ports:
         - containerPort: 8080
         env:
