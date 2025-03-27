@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bankapp-service
+spec:
+  type: ClusterIP  # Changed from LoadBalancer to ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: bankapp
+    version: blue  # This can be changed to "green" when switching traffic
+
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bankapp-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: bankapp.babarzahoor.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bankapp-service
+            port:
+              number: 80
